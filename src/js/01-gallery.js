@@ -21,7 +21,7 @@ function ongallaryElementClick(ev) {
 
   const selectedImage = event.dataset.source;
 
-  createSelectedElement(selectedImage);
+  controlSelectedElement(selectedImage);
 }
 
 function createGalery(arr) {
@@ -41,7 +41,7 @@ function createGalery(arr) {
     .join('');
 }
 
-function createSelectedElement(item) {
+function controlSelectedElement(item) {
   const instance = basicLightbox.create(
     `
     <img src="${item}" width="800" height="600">
